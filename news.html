@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>百度新闻</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class=".clearfix">
+            <a href=""><i class="iconfont">&#xe605;</i></a>
+            <a href=""><i class="iconfont">&#xe62e;</i></a>
+            <a href=""><i class="iconfont">&#xe610;</i></a>
+            <a href=""><i class="iconfont">&#xe72e;</i></a>
+        </header>
+        <nav>
+            <ul>
+                <li class="br btn1">
+                    <a href="javascript:;" class="click-this">精选</a>
+                </li>
+                <li class="br btn1">
+                    <a href="javascript:;">百家</a><i></i>
+                </li>
+                <li class="br btn1">
+                    <a href="javascript:;">本地</a><i></i>
+                </li>
+                <li class="br btn1">
+                    <a href="javascript:;">图片</a><i></i>
+                </li>
+                <li class="br btn1">
+                    <a href="javascript:;">娱乐</a>
+                </li>
+                <li class="btn1">
+                    <a href="javascript:;">社会</a><i></i>
+                </li>
+                <li class="br btn1">
+                    <a href="javascript:;">军事</a><i></i>
+                </li>
+                <li class="br btn1">
+                    <a href="javascript:;">女人</a><i></i>
+                </li>
+                <li class="br btn1">
+                    <a href="javascript:;">搞笑</a><i></i>
+                </li>
+                <li class="br d-btn">
+                    <a href="javascript:;">互联网</a><i></i>
+                </li>
+                <li class="btn1">
+                    <a href="javascript:;">更多</a>
+                </li>
+            </ul>
+        </nav>
+        <article>
+			<ul class="lists">
+				<!-- 自动添加内容 -->
+			</ul>
+        </article>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+    	// 设置nav导航栏每项宽度
+        var $width = $('body').width();
+        $("nav li").each(function() {
+            var len = $(this).children().text().split("").length;
+                $(this).children().width(len*1.6+"rem");
+        });
+    });
+    </script>
+    <script src="js/news.js"></script>
+</body>
+
+</html>

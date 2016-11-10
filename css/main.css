@@ -1,0 +1,240 @@
+/*common css*/
+
+html {
+    font-size: 62.5%;
+    font-family: arial,sans-serif;
+}
+
+html,
+body,
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    font-size: 0;
+}
+
+ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:after {
+    display: block;
+    content: '';
+    height: 0;
+    clear: both;
+    overflow: hidden;
+}
+@font-face {font-family: 'iconfont';
+    src: url('../font/iconfont.eot'); /* IE9*/
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*header css*/
+
+header {
+    width: 100%;
+    height: 4rem;
+    background: #3e98f0 url(../img/news-logo.png) center 10px no-repeat;
+    background-size: 5.5rem auto;
+    border-bottom: .1rem solid #5dabf0;
+}
+
+header a {
+    display: inline-block;
+    width: 3.5rem;
+    text-align: center;
+    color: #fff;
+}
+
+header i.iconfont {
+    font-size: 2.4rem;
+    line-height: 4rem;
+}
+
+header a:first-child,
+header a:nth-child(2) {
+    float: left;
+}
+
+header a:nth-child(3),
+header a:nth-child(4) {
+    float: right;
+}
+
+
+/*nav css*/
+
+nav {
+    width: 100%;
+    height: 8rem;
+    background: #3e98f0;
+}
+
+nav li {
+    position: relative;
+    // display: inline-block;
+    float: left;
+    height: 4rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+nav .btn1{
+    width: 16.66%;
+}
+nav .d-btn{
+    width: 33.33%;
+}
+nav li a {
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    padding: 1.1rem 0;
+}
+
+nav li a.click-this {
+    border-bottom: 0.2rem solid #fff;
+}
+
+nav li.br:after {
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+    content: '';
+    display: block;
+    width: .1rem;
+    height: 1.2rem;
+    background: #5dabf0;
+}
+
+
+/* article css*/
+
+article {
+    width: 100%;
+}
+
+article ul {
+    width: 100%;
+    padding: 0 1.2rem;
+    box-sizing: border-box;
+
+}
+
+article ul >.list {
+    width: 100%;
+    height: 7.5rem;
+    padding: 1.2rem 0;
+    font-size: 1.8rem;
+    border-bottom: .1rem solid #f6f6f6;
+}
+article ul >.imgnews-container {
+    width: 100%;
+    height: 20rem;
+    padding: 0.2rem 0;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #efefef;
+}
+article ul >.list .list-a,
+article ul >.imgnews-container .img-a{
+	display: block;
+	height: 100%;
+	width:100%;
+}
+article ul >.imgnews-container {
+    width: 100%;
+    height: 20rem;
+    padding: 0.2rem 0;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #efefef;
+}
+article ul >.imgnews-container .img-a .title{
+    margin: .5rem 0;
+    font-size: 1.8rem;
+    color: #333;
+}
+article ul >.imgnews-container .img-a .img-item{
+    width: 100%;
+    height:17rem;
+}
+
+.list .list-image {
+    float: left;
+    width: 33.33%;
+    height: 100%;
+}
+
+.list .list-image .newsimg {
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.list .info {
+	position:relative;
+    float: left;
+    width: 66.66%;
+    height: 100%;
+    padding: .5rem 0 .5rem 1rem;
+    box-sizing: border-box;
+}
+.list .info1{
+    position:relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    padding: .5rem 0 .5rem 1rem;
+    box-sizing: border-box;
+}
+
+.list .info .newstitle {
+	font-size:1.8rem;
+	color: #333;
+}
+.list .info .datetime {
+	position:absolute;
+	bottom: 0;
+}
+.list .info .newstime {
+    display:inline-block;
+    margin-right: .5rem;
+	font-size: 1rem;
+	color: #999;
+}
+.list .info .hobby {
+	font-size: 1rem;
+	color: #ef3f41;
+	border: .1rem solid #ef3f41;
+	border-radius: 0.2rem;
+}
